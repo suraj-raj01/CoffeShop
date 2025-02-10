@@ -15,7 +15,7 @@ const Robusta = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const loadData = async () => {
-    let api = "http://localhost:8080/coffeeshop/robustashow";
+    let api = "https://coffeshop-expx.onrender.com/coffeeshop/robustashow";
     try {
       const response = await axios.post(api, { coffee: coffee });
       setMydata(response.data);

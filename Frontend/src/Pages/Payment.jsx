@@ -52,7 +52,7 @@ const Payment = () => {
   };
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
-  //   let api = "http://localhost:8080/customer/customerdata";
+  //   let api = "https://coffeshop-expx.onrender.com/customer/customerdata";
   //   try {
   //     const response = await axios.post(api, input);
   //     message.success(response.data);
@@ -64,7 +64,7 @@ const Payment = () => {
   const [mydata, setMydata] = useState({});
 
   const loadData = async () => {
-    const api = "http://localhost:8080/coffeeshop/showitembyid";
+    const api = "https://coffeshop-expx.onrender.com/coffeeshop/showitembyid";
     try {
       const response = await axios.post(api, {id:id});
       setMydata(response.data);
@@ -94,7 +94,7 @@ const Payment = () => {
   const [optionVal,setOptionVal] = useState("")
   const handleOption=async(e)=>{
 
-    let api = "http://localhost:8080/customer/customerdata";
+    let api = "https://coffeshop-expx.onrender.com/customer/customerdata";
     try {
       const response = await axios.post(api, input);
       // message.success(response.data);

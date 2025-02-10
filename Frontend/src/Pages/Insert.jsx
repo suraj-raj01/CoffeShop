@@ -16,7 +16,7 @@ const Insert = () => {
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        let api = 'http://localhost:8080/coffeeshop/coffeeinsert';
+        let api = 'https://coffeshop-expx.onrender.com/coffeeshop/coffeeinsert';
         try {
             await axios.post(api,input);
             message.success("data inserted success");

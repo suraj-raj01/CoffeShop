@@ -57,7 +57,7 @@ const SaveItemPayment = () => {
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
-  //   let api = "http://localhost:8080/customer/customerdata";
+  //   let api = "https://coffeshop-expx.onrender.com/customer/customerdata";
   //   try {
   //     const response = await axios.post(api, input);
   //     message.success(response.data);
@@ -96,7 +96,7 @@ const SaveItemPayment = () => {
   const [optionVal,setOptionVal] = useState("")
     const handleOption=async(e)=>{
 
-      let api = "http://localhost:8080/customer/customerdata";
+      let api = "https://coffeshop-expx.onrender.com/customer/customerdata";
       try {
         const response = await axios.post(api, input);
       } catch (error) {

@@ -7,7 +7,7 @@ const UserActivity = () => {
   const[mydata,setMydata] = useState([]);
 
   const loadData=async()=>{
-    let api = 'http://localhost:8080/customer/customerdisplay';
+    let api = 'https://coffeshop-expx.onrender.com/customer/customerdisplay';
     try {
       const response = await axios.get(api);
       setMydata(response.data);
@@ -22,7 +22,7 @@ const UserActivity = () => {
   },[])
 
   const deleteData=async(id)=>{
-    let api =  'http://localhost:8080/customer/customerdelete';
+    let api =  'https://coffeshop-expx.onrender.com/customer/customerdelete';
     try {
       const response = await axios.post(api,{id:id});
       message.success(response.data);

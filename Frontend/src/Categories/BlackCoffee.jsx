@@ -14,7 +14,7 @@ const BlackCoffee = () => {
   const[isVisible,setIsVisible] = useState(true);
 
   const loadData=async()=>{
-    let api = 'http://localhost:8080/coffeeshop/blackcoffee'
+    let api = 'https://coffeshop-expx.onrender.com/coffeeshop/blackcoffee'
     try {
       const response = await axios.post(api,{coffee:coffee});
       setMydata(response.data);

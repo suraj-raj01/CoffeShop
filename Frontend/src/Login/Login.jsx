@@ -18,7 +18,7 @@ const Login = () => {
 
     const handleSubmit=async(e)=>{
        e.preventDefault();
-       let api = 'http://localhost:8080/user/login';
+       let api = 'https://coffeshop-expx.onrender.com/user/login';
        try {
         const response = await axios.post(api,input);
         console.log(response.data);

@@ -12,7 +12,7 @@ const OrderDetails = () => {
   const {id} = useParams();
   const[mydata,setMydata] = useState({})
   const loadData=async()=>{
-    let api = 'http://localhost:8080/coffeeshop/details'
+    let api = 'https://coffeshop-expx.onrender.com/coffeeshop/details'
     try {
       const response = await axios.post(api,{_id:id});
       setMydata(response.data);

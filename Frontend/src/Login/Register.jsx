@@ -19,7 +19,7 @@ const Register = () => {
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    let api = 'http://localhost:8080/user/register'
+    let api = 'https://coffeshop-expx.onrender.com/user/register'
     try {
       const response = await axios.post(api,input);
       setInput(response.data);

@@ -13,7 +13,7 @@ const Arabica = () => {
   const[mydata,setMydata] = useState([]);
   const[isVisible,setIsVisible] = useState(true);
   const loadData=async()=>{
-    let api = 'http://localhost:8080/coffeeshop/arabicashow'
+    let api = 'https://coffeshop-expx.onrender.com/coffeeshop/arabicashow'
     try {
       const response = await axios.post(api,{coffee:coffee});
       setMydata(response.data);

@@ -18,7 +18,7 @@ const Search = () => {
   const setCoffe = async (e) => {
     let coffeName = e.target.value;
     setcoffeename(coffeName);
-    let api = "http://localhost:8080/coffeeshop/searchcoffee";
+    let api = "https://coffeshop-expx.onrender.com/coffeeshop/searchcoffee";
     try {
       const response = await axios.post(api, { Coffee: Coffee });
       setMydata(response.data);
