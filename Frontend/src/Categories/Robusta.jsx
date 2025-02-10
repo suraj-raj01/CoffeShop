@@ -58,7 +58,7 @@ const Robusta = () => {
     let newPrice = Number(key.price - discount);
     return (
       <>
-        <Card style={{ width: "320px" }}>
+        <Card id="card-data">
           <Card.Img variant="top" src={key.image_url} height="200px" onClick={()=>{orderDetails(key._id)}}/>
           <Card.Body>
             <Card.Title style={{ color: "#4D9385" }}>
@@ -90,12 +90,7 @@ const Robusta = () => {
               {" /-"}
             </h6>
             <br />
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
+            <div id="btns"
             >
               <Button
                 style={{

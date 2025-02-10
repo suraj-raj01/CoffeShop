@@ -58,7 +58,7 @@ const Baurbon = () => {
     let newPrice = Number(key.price-discount);
     return(
       <>
-        <Card style={{ width: "32%" }}>
+        <Card id="card-data">
           <Card.Img
             variant="top"
             src={key.image_url}
@@ -78,13 +78,7 @@ const Baurbon = () => {
             </div>
             <h6 style={{color:'#4D9385',fontWeight:'bold'}}>New Price : {newPrice}{" /-"}</h6>
             <br />
-            <div style={
-              {
-                display:'flex',
-                alignItems:'center',
-                justifyContent:'space-between',
-              }
-            }>
+            <div id="btns">
             <Button style={{backgroundColor:'#4D9385',border:'none',textTransform:'capitalize'}}
             onClick={()=>{addItem(
               key._id,

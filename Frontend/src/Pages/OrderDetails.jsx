@@ -67,12 +67,7 @@ const OrderDetails = () => {
             <br />  
             <p></p>
             
-            <div style={{
-              display:'flex',
-              alignItems:'center',
-              justifyContent:'start',
-              gap:'20px'
-            }}>
+            <div id="details-btns">
             <Button style={{backgroundColor:'#4D9385',border:'none',padding:'8px 20px'}}
             onClick={()=>{payment(mydata._id)}}
             >Payment</Button>

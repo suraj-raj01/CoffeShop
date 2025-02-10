@@ -72,7 +72,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     background-color: transparent;
 }
@@ -137,12 +137,12 @@ h1 {
 
 /* Cards */
 #cards {
-    margin-top: 20px;
+    margin-top: -20px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -225,6 +225,22 @@ button {
     margin-top: 10px;
 }
 
+#card-data{
+    width: 32%;
+}
+
+#btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#details-btns{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
 /* Media Queries for Responsive Design */
 
 /* Mobile View (up to 767px) */
@@ -263,6 +279,17 @@ button {
     #details #box,
     #details #contents {
         width: 100%;
+    }
+    #card-data{
+        width: 95%;
+    }
+    #btns Button{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #details-btns Button{
+        font-size: 14px;
+        font-weight: bold;
     }
 }
 
