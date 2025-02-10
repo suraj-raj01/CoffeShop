@@ -241,6 +241,20 @@ button {
     gap: 20px;
 }
 
+#form{
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#user-data{
+    width: 100%;
+}
+#user-data Table{
+    width: 100%;
+}
+
 /* Media Queries for Responsive Design */
 
 /* Mobile View (up to 767px) */
@@ -300,6 +314,13 @@ button {
         padding: 5px;
         box-shadow: 0 0 1px #cbcaca;
         font-weight: normal;
+    }
+    #form{
+        width: 300px;
+        margin: 0px auto;
+    }
+    #user-data Table td,th{
+        font-size: 12px;
     }
 }
 

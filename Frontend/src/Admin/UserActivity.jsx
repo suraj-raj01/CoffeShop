@@ -51,9 +51,10 @@ const UserActivity = () => {
   })
 
   return (
-    <div>
+    <>
         <h1>UserActivity</h1>
-        <Table bordered striped hover responsive>
+        <div id="user-data">
+        <Table bordered striped hover responsive width='100%'>
           <thead>
             <tr>
               <th>S.No</th>
@@ -67,7 +68,8 @@ const UserActivity = () => {
           {res}
           </tbody>
         </Table>
-    </div>
+        </div>
+    </>
   )
 }
 

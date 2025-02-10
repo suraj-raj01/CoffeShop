@@ -28,9 +28,7 @@ const Insert = () => {
   return (
     <div>
       {/* <h1>Insert Coffees</h1> */}
-      <Form id='form' style={{
-        width:'400px',margin:'50px auto',padding:'20px',borderRadius:'10px'
-      }}>
+      <Form id='form' >
         <center><b>Insert Coffee Details</b></center>
         <br />
       <Form.Group className="mb-3" controlId="formBasicEmail">

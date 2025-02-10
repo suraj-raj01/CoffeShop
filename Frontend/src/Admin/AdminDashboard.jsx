@@ -25,10 +25,9 @@ const AdminDashboard = () => {
                 <Nav.Link as={Link} to='#'> 
                 <Button>Black Coffee</Button>
                 </Nav.Link> */}
-                <br /><br /><br />
             </Nav>
         </div>
-        <div id="box2" style={{alignItems:'start',padding:'45px 0px'}}>
+        <div id="box2" style={{alignItems:'start',height:'550px', padding:'45px 0px'}}>
             <Outlet/>
         </div>
       </div>
