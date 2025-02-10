@@ -291,6 +291,16 @@ button {
         font-size: 14px;
         font-weight: bold;
     }
+    #category #box1{
+        width: 92%;
+        margin-bottom: 30px;
+    }
+    #category #box1 #nav Button {
+        width: 90%;
+        padding: 5px;
+        box-shadow: 0 0 1px #cbcaca;
+        font-weight: normal;
+    }
 }
 
 /* Tablet View (768px to 1023px) */
