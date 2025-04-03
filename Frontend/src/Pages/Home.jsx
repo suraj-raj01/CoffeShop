@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "react-bootstrap/esm/Button";
-import { Outlet, Link} from "react-router-dom";
+import { Outlet, Link, useNavigate} from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 const Home = () => {
+  const navigate = useNavigate();
+
+  useEffect(()=>{
+    navigate("/home")
+  },[])
 
   return (
     <div>
